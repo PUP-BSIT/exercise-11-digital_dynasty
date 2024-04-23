@@ -1,0 +1,218 @@
+body {
+  background-image: url("https://wallpapers.com/images/hd/cherry-blossoms-anime-scenery-fvn3g06sr4bshzpu.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: cursive;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+}
+
+.sections {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#heading {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#interest,
+#works {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+ul li {
+  margin: 20px 0;
+  padding-inline-start: 2ch;
+  width: 10px;
+  height: 10px;
+}
+
+#works {
+  margin-right: 0;
+}
+
+#works a:hover,
+#works a:active {
+  font-family: "Brush Script MT";
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#testi {
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+#gallery {
+  border: 2px solid black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+#gallery img {
+  border: 2px solid black;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "email email"
+    "name name"
+    "age subject"
+    "message message"
+    "copy submit";
+}
+
+label {
+  grid-area: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+}
+
+#email {
+  grid-area: email;
+}
+
+#name {
+  grid-area: name;
+}
+
+#subject {
+  grid-area: subject;
+}
+
+#age {
+  grid-area: age;
+}
+
+#message {
+  grid-area: message;
+}
+
+#copy {
+  grid-area: smcopy;
+}
+
+#submit {
+  grid-area: submit;
+}
+
+@media (max-width: 320px) {
+  .form {
+    grid-template-areas:
+      "email"
+      "name"
+      "age"
+      "subject"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .form {
+    grid-template-areas:
+      "email"
+      "name"
+      "age"
+      "subject"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .form {
+    grid-template-areas:
+      "email"
+      "name"
+      "age"
+      "subject"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .form {
+    grid-template-areas:
+      "email" 
+      "name"
+      "age" 
+      "subject"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form {
+    grid-template-areas:
+      "email" 
+      "name"
+      "age"
+      "subject"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
+
+@media (min-width: 1025px) {
+  .form {
+    grid-template-areas:
+      "email" "name" "age" 
+      "subjectt"
+      "smcopy"
+      "message"
+      "submit";
+  }
+}
