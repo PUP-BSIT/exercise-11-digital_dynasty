@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var nameInput = document.getElementById("name");
-  var commentTextarea = document.getElementById("textarea_for_comment");
-  var commentButton = document.getElementById("comment");
+  let nameInput = document.getElementById("name");
+  let commentTextarea = document.getElementById("textarea_for_comment");
+  let commentButton = document.getElementById("comment");
 
   nameInput.addEventListener("input", checkFormValidity);
   commentTextarea.addEventListener("input", checkFormValidity);
 
   function checkFormValidity() {
-    var nameValue = nameInput.value.trim();
-    var commentValue = commentTextarea.value.trim();
+    let nameValue = nameInput.value.trim();
+    let commentValue = commentTextarea.value.trim();
     commentButton.disabled = !(nameValue && commentValue);
   }
 
