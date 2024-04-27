@@ -1,4 +1,92 @@
-body {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reyes John Ruiz Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>REYES JOHN RUIZ</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>My interests and hobbies</h2>
+        <ul>
+          <li>Playing Computer Games</li>
+          <li>Jogging</li>
+          <li>Learning new chords to my guitar</li>
+          <li>Little bit workout</li>
+          <li>Dancing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>My works</h2>
+        <ol>
+          <li><a href="./work/business.html">Work 1</a></li>
+          <li><a href="./work/coast.html">Work 2</a></li>
+          <li><a href="./work/info.html">Work 3</a></li>
+          <li><a href="./work/Laws.html">Work 4</a></li>
+          <li><a href="./work/marketing.html">Work 5</a></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="testimonials">Testimonials</h2>
+        <div class="testimonials">
+          <div>
+            <p>
+              Bergado, Shamma S.J. Monday, April 8, 2024 Working alongside my
+              coding group mate Ruiz has been nothing short of inspiring. His
+              passion for problem-solving and dedication to excellence have 
+              made every coding session a rewarding experience.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Norona, Mary Nicole P. Monday, April 8, 2024 Having a teammate
+              like John, who is a very responsible and hardworking man is one 
+              of the reasons why we are creating great projects in our team.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Reyes, Paul Angelo Monday, April 8, 2024 Coding with my group
+              mates has been smooth sailing. Their exceptional skills and
+              seamless communication help us tackle challenges with confidence  
+              and achieve remarkable results.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Morcoso, Daisy Monday, April 8, 2024 Ruiz, my classmate, has
+              potential in coding. While not advanced, he grasps programming
+              concepts and shows promise in class projects. With further
+              growth,he could become a valuable asset to our coding team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+          <img src="Joji_-_Nectar.png" alt="Image 1" />
+          <img src="billie.jpg" alt="Image 2" />
+          <img src="gameofthrones.jpg" alt="Image 3" />
+          <img src="skyline.jpg" alt="Image 4" />
+          <img src="zild.jpg" alt="Image 5" />
+          <img src="strnger.jpg" alt="Image 6" />
+        </div>
+      </section>
+      
+     body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -61,14 +149,49 @@ ol li {
   margin-bottom: 20px;
 }
 
-.add-comment {
-  margin: 20px 0;
+/* Add this CSS at the end of your existing style.css file */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Style My Goals container */
+.my-goals-container {
+  background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
   box-sizing: border-box;
-  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.my-goals-header {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* Center align only the header */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.my-goals {
+  margin-bottom: 20px; /* Add margin at the bottom of goals */
+}
+
+.my-goals ol {
+  padding-left: 20px; /* Indent list items */
+}
+
+/* Style Add Comment container */
+.add-comment {
+  background-color: rgba(192, 232, 247, 0.963); /* Different color for Add Comment container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin at the bottom */
 }
 
 .add-comment h3 {
@@ -79,28 +202,15 @@ ol li {
   text-align: center;
 }
 
-.add-comment-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.add-comment-form input,
-.add-comment-form textarea,
-.add-comment-form button {
-  margin-bottom: 10px;
-}
-.comments-of-team {
-  margin: 20px 0;
+/* Style Comments container */
+.comments {
+  background-color: rgba(192, 232, 247, 0.963); /* Different color for Comments container */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  box-sizing: border-box;
-  background-color: rgba(148, 176, 185, 0.963);
-  text-align: center;
 }
 
-.comments-of-team h3 {
+.comments h3 {
   color: #000000;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
@@ -108,9 +218,6 @@ ol li {
   text-align: center;
 }
 
-.comments {
-  /* Add styles as needed */
-}
 
 .oc-thoughts {
   margin: 20px 0;
@@ -226,42 +333,5 @@ form {
   color: #000000;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
-}
+  cursor: pointe
 
-@media (min-width: 425px) {
-  form {
-    grid-template-areas:
-      "email name"
-      "age subject"
-      "smcopy smcopy"
-      "message message"
-      "submit submit";
-  }
-}
-
-@media (width=425px) {
-  form {
-    grid-template-areas:
-      "email email"
-      "name name"
-      "age age"
-      "subject subject"
-      "smcopy smcopy"
-      "message message"
-      "submit submit";
-  }
-}
-
-@media (max-width: 425px) {
-  form {
-    grid-template-areas:
-      "email email"
-      "name name"
-      "age age"
-      "subject subject"
-      "smcopy smcopy"
-      "message message"
-      "submit submit";
-  }
-}
