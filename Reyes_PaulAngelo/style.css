@@ -73,6 +73,17 @@ h2 {
   margin: 10px;
 }
 
+#thoughts {
+  border: 2px black solid;
+  margin-bottom: 20px;
+}
+
+#reasons {
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 #goals {
   border: 2px black solid;
   margin-bottom: 20px;
