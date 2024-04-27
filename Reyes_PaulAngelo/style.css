@@ -9,35 +9,28 @@ body {
 
 .container {
   width: 100%;
+  display: flex;
+  border: 20px;
+  justify-content: space-between;
 }
 
-.sections {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  box-sizing: border-box;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.section {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  flex: 1;
 }
 
 #heading {
-  margin: auto;
   padding: 10px;
   text-align: center;
-}
-
-#interest,
-#works {
   border: 2px solid black;
   margin-bottom: 20px;
-  padding: 10px;
 }
 
-ul li {
-  margin: 20px 0;
-  padding-inline-start: 2ch;
-  width: 10px;
-  height: 10px;
+h2 {
+  text-align: center;
+  margin-bottom:10px ;
 }
 
 #works {
@@ -55,12 +48,17 @@ ul li {
 
 #testi {
   border: 2px solid black;
-  text-align: center;
   padding: 10px;
+  margin-bottom: 20px;
+}
+
+#gborder {
+  border: 2px solid black;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #gallery {
-  border: 2px solid black;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -69,11 +67,31 @@ ul li {
 }
 
 #gallery img {
-  border: 2px solid black;
-  margin: 10px;
   width: 200px;
-  height: 200px;
+  height: 200px; 
   object-fit: cover;
+  margin: 10px;
+}
+
+#goals {
+  border: 2px black solid;
+  margin-bottom: 20px;
+}
+
+#tcomment {
+  border: 2px black solid;
+  margin-bottom: 20px;
+}
+
+#comments {
+  border: 2px black solid;
+  margin-bottom: 20px;
+  margin: 1;
+}
+
+#form{
+  border: 2px black solid;
+  margin-bottom: 20px;
 }
 
 .form-container {
@@ -155,7 +173,7 @@ button {
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
-  .form {
+  form {
     grid-template-areas:
       "email"
       "name"
@@ -168,7 +186,7 @@ button {
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
-  .form {
+  form {
     grid-template-areas:
       "email"
       "name"
@@ -181,22 +199,9 @@ button {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .form {
+  form {
     grid-template-areas:
-      "email" 
-      "name"
-      "age" 
-      "subject"
-      "smcopy"
-      "message"
-      "submit";
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .form {
-    grid-template-areas:
-      "email" 
+      "email"
       "name"
       "age"
       "subject"
@@ -206,11 +211,13 @@ button {
   }
 }
 
-@media (min-width: 1025px) {
-  .form {
+@media (min-width: 769px) and (max-width: 1024px) {
+  form {
     grid-template-areas:
-      "email" "name" "age" 
-      "subjectt"
+      "email"
+      "name"
+      "age"
+      "subject"
       "smcopy"
       "message"
       "submit";
