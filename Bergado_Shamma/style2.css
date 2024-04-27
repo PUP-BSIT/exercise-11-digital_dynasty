@@ -27,7 +27,8 @@ body {
 #testimonials,
 .gallery,
 .contact-me,
-.my-goals, .oc-thoughts {
+.my-goals,
+.oc-thoughts {
   background-color: white;
   margin: 3%;
   padding: 1%;
@@ -37,7 +38,8 @@ body {
 .hobbies-and-interests p,
 .works li,
 .my-goals li,
-.comments-of-team, .reasons {
+.comments-of-team,
+.reasons {
   background-color: rgb(173, 216, 230);
   color: black;
   box-shadow: 2px 2px 2px 2px #0096ff;
@@ -45,7 +47,7 @@ body {
 }
 
 .oc-thoughts li {
-  list-style-type: none;;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -87,7 +89,7 @@ li {
 }
 
 .oc-thoughts {
-color: black;
+  color: black;
 }
 
 .hobbies-and-interests ul,
@@ -126,7 +128,7 @@ form {
 #name2,
 #textarea_for_comment,
 #comment {
-  width: 97%;
+  width: 95%;
   background-color: rgb(173, 216, 230);
   font-size: larger;
   box-shadow: 2px 2px 2px 2px #0096ff;
@@ -202,6 +204,7 @@ label {
 .it {
   grid-area: it;
 }
+
 .nurse {
   grid-area: nurse;
 }
@@ -292,9 +295,7 @@ button[type="submit"] {
 
 #message {
   width: 90%;
-  height:
-
- auto;
+  height: auto;
 }
 
 button {
@@ -509,10 +510,12 @@ button {
       " . watch . "
       "paint . sing";
   }
+
   ul li {
     margin: 0;
     width: 90px;
   }
+
   li {
     list-style-position: inside;
   }
@@ -540,9 +543,7 @@ button {
       ". checkbox"
       "message message"
       "submit submit";
-    overflow: scroll
-
-;
+    overflow: scroll;
   }
 
   input[type="number"],
@@ -576,4 +577,3 @@ button {
     height: 60px;
   }
 }
-```
