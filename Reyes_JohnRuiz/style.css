@@ -61,14 +61,24 @@ ol li {
   margin-bottom: 20px;
 }
 
-.add-comment {
+/* Add this CSS at the end of your existing style.css file */
+
+.my-goals {
+  background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   box-sizing: border-box;
-  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.my-goals {
+  margin-bottom: 20px; /* Add margin at the bottom of goals */
+}
+
+.my-goals ol {
+  padding-left: 20px; /* Indent list items */
 }
 
 .add-comment h3 {
@@ -79,28 +89,15 @@ ol li {
   text-align: center;
 }
 
-.add-comment-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.add-comment-form input,
-.add-comment-form textarea,
-.add-comment-form button {
-  margin-bottom: 10px;
-}
-.comments-of-team {
-  margin: 20px 0;
+.comments {
+  margin-top: 20px; /* Add margin at the top of comments */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  box-sizing: border-box;
   background-color: rgba(148, 176, 185, 0.963);
-  text-align: center;
 }
 
-.comments-of-team h3 {
+.comments h3 {
   color: #000000;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
@@ -108,9 +105,8 @@ ol li {
   text-align: center;
 }
 
-.comments {
-  /* Add styles as needed */
-}
+
+
 
 .oc-thoughts {
   margin: 20px 0;
