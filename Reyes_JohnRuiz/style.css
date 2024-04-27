@@ -63,20 +63,13 @@ ol li {
 
 /* Add this CSS at the end of your existing style.css file */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 20px auto;
-}
-
-/* Style My Goals container */
 .my-goals-container {
   background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
+  margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
   box-sizing: border-box;
 }
 
@@ -97,15 +90,6 @@ ol li {
   padding-left: 20px; /* Indent list items */
 }
 
-/* Style Add Comment container */
-.add-comment {
-  background-color: rgba(192, 232, 247, 0.963); /* Different color for Add Comment container */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Add margin at the bottom */
-}
-
 .add-comment h3 {
   color: #000000;
   border-bottom: 2px solid #ffffff;
@@ -114,12 +98,12 @@ ol li {
   text-align: center;
 }
 
-/* Style Comments container */
 .comments {
-  background-color: rgba(192, 232, 247, 0.963); /* Different color for Comments container */
+  margin-top: 20px; /* Add margin at the top of comments */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(148, 176, 185, 0.963);
 }
 
 .comments h3 {
@@ -129,6 +113,8 @@ ol li {
   margin-bottom: 20px;
   text-align: center;
 }
+
+
 
 
 .oc-thoughts {
@@ -245,4 +231,42 @@ form {
   color: #000000;
   border: none;
   padding: 10px 20px;
-  cursor: pointe
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  form {
+    grid-template-areas:
+      "email name"
+      "age subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (width=425px) {
+  form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
