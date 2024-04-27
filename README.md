@@ -1,6 +1,6 @@
 <p><a href="https://group-digital-dynasty.netlify.app/">Digital Dynasty</a></p>
 <p><a href="https://reyes-paulangelo.netlify.app/">Paul Angelo Reyes</a></p>
-<p><a href="https://bergado-shamma.netlify.app">Shamma San Jose Bergado</a></p>
+<p><a href="https://digital-dynasty-ex11.netlify.app">Shamma San Jose Bergado</a></p>
 <p><a href="https://reyes-john-ruiz.netlify.app/">John Ruiz Parayno Reyes</a></p>
 <p><a href="https://661d48daeb9ee700bbf39e08--norona-mary-nicole.netlify.app/">Mary Nicole Perillo Norona</a></p>
 <p><a href="https://morcoso-daisy.netlify.app/">Daisy Cangayda Morcoso</a></p>
