@@ -236,6 +236,16 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.add-comment-container {
+  text-align: center;
+}
+
+.comment-section .add-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .comments-of-team-comment {
   background-color:  rgba(158, 104, 75, 0.825);
   color: #0a0a0aa7;
