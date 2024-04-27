@@ -3,7 +3,7 @@
 <p><a href="https://digital-dynasty-ex11.netlify.app">Shamma San Jose Bergado</a></p>
 <p><a href="https://ex11-reyes-johnruiz.netlify.app/">John Ruiz Parayno Reyes</a></p>
 <p><a href="https://norona-mary.netlify.app/">Mary Nicole Perillo Norona</a></p>
-<p><a href="https://morcoso-daisy.netlify.app/">Daisy Cangayda Morcoso</a></p>
+<p><a href="https://morcosodaisy.netlify.app/">Daisy Cangayda Morcoso</a></p>
 
 <p>Feel free to explore our repository!</p>
 
