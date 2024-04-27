@@ -63,7 +63,7 @@ ol li {
 
 /* Add this CSS at the end of your existing style.css file */
 
-.my-goals-container {
+.my-goals {
   background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
   margin: 20px 0;
   padding: 20px;
@@ -71,15 +71,6 @@ ol li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   box-sizing: border-box;
-}
-
-.my-goals-header {
-  color: #000000;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: center; /* Center align only the header */
-  text-transform: uppercase; /* Convert text to uppercase */
 }
 
 .my-goals {
