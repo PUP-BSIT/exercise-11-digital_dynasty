@@ -116,6 +116,7 @@ ol li {
   width: 80%;
   box-sizing: border-box;
   background-color: rgba(148, 176, 185, 0.963);
+  justify-content: center;
 }
 
 .oc-thoughts h2 {
@@ -124,10 +125,6 @@ ol li {
   padding-bottom: 10px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.reasons {
-  /* Add styles as needed */
 }
 
 .gallery {
