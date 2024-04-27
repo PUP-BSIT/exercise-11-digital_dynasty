@@ -125,11 +125,25 @@ body {
 }
 
 .title,
-#my_name {
+#my_name,
+.goals,
+.opinion {
   border: 2px solid;
   text-align: center;
   font-style: italic;
   font-family: "Arial Narrow Bold";
+}
+
+.comment input{
+  width: 100%;
+}
+
+.comment textarea{
+  width: 100%;
+}
+
+.comment button{
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {

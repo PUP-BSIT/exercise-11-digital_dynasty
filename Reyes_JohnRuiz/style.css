@@ -61,6 +61,78 @@ ol li {
   margin-bottom: 20px;
 }
 
+.add-comment {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.add-comment h3 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-comment-form input,
+.add-comment-form textarea,
+.add-comment-form button {
+  margin-bottom: 10px;
+}
+.comments-of-team {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.comments-of-team h3 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comments {
+  /* Add styles as needed */
+}
+
+.oc-thoughts {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.oc-thoughts h2 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reasons {
+  /* Add styles as needed */
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -87,30 +159,36 @@ ol li {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
 }
- .Contact {
-  text-align: center;
 
- }
+.Contact {
+  text-align: center;
+}
 
 form {
   display: grid;
   grid-template-areas:
-  "email name"
-  "age subject"
-  "smcopy ."
-  "message ."
-  "submit submit";
+    "email name"
+    "age subject"
+    "smcopy ."
+    "message ."
+    "submit submit";
   border: 1px solid;
-  padding: 20px; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: auto;
   box-sizing: border-box;
-  background-color: rgba(148, 176, 185, 0.963); 
+  background-color: rgba(148, 176, 185, 0.963);
 }
 
-#email, #name, #subject, #age, #message, #smcopy, #submit {
-  padding: 10px; 
+#email,
+#name,
+#subject,
+#age,
+#message,
+#smcopy,
+#submit {
+  padding: 10px;
 }
 
 #email {
@@ -129,11 +207,12 @@ form {
   grid-area: age;
 }
 
+
 #message {
   grid-area: message;
-  width: 100%; 
-  height: 150px; 
-  resize: vertical; 
+  width: 100%;
+  height: 150px;
+  resize: vertical;
 }
 
 #smcopy {
@@ -142,16 +221,16 @@ form {
 
 #submit {
   grid-area: submit;
-  background-color: rgba(192, 232, 247, 0.963); 
-  color: #000000; 
+  background-color: rgba(192, 232, 247, 0.963);
+  color: #000000;
   border: none;
-  padding: 10px 20px; 
-  cursor: pointer; 
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 425px) {
   form {
-      grid-template-areas:
+    grid-template-areas:
       "email name"
       "age subject"
       "smcopy smcopy"
@@ -162,7 +241,7 @@ form {
 
 @media (width=425px) {
   form {
-      grid-template-areas:
+    grid-template-areas:
       "email email"
       "name name"
       "age age"
@@ -175,7 +254,7 @@ form {
 
 @media (max-width: 425px) {
   form {
-      grid-template-areas:
+    grid-template-areas:
       "email email"
       "name name"
       "age age"
