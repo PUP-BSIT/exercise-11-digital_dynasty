@@ -4,6 +4,11 @@
   font-weight: bold;
 }
 
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-image: url(./pictures/background.png);
@@ -21,7 +26,8 @@ body {
 .works,
 #testimonials,
 .gallery,
-.contact-me {
+.contact-me,
+.my-goals, .oc-thoughts {
   background-color: white;
   margin: 3%;
   padding: 4%;
@@ -29,10 +35,19 @@ body {
 }
 
 .hobbies-and-interests p,
-.works li {
+.works li,
+.my-goals li,
+.comments-of-team, .reasons {
   background-color: rgb(173, 216, 230);
   color: black;
   box-shadow: 2px 2px 2px 2px #0096ff;
+  margin-top: 20px;
+}
+
+.oc-thoughts li {
+  list-style-type: none;;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pictures img {
@@ -71,7 +86,11 @@ li {
   list-style-position: inside;
 }
 
-ul,
+.oc-thoughts {
+color: black;
+}
+
+.hobbies-and-interests ul,
 .pictures,
 ol {
   background-color: rgb(0, 71, 171);
@@ -103,10 +122,19 @@ form {
 #subject,
 #age,
 #message,
-#submit {
+#submit,
+#name2,
+#textarea_for_comment,
+#comment {
+  width: 97%;
   background-color: rgb(173, 216, 230);
   font-size: larger;
   box-shadow: 2px 2px 2px 2px #0096ff;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
 }
 
 #email {
@@ -182,6 +210,22 @@ label {
   grid-area: law;
 }
 
+#ruiz {
+  grid-area: ruiz;
+}
+
+#pol {
+  grid-area: pol;
+}
+
+#mary {
+  grid-area: rmary;
+}
+
+#daisy {
+  grid-area: daisy;
+}
+
 .img-one {
   grid-area: one;
 }
@@ -248,7 +292,9 @@ button[type="submit"] {
 
 #message {
   width: 90%;
-  height: auto;
+  height:
+
+ auto;
 }
 
 button {
@@ -298,6 +344,18 @@ button {
       "it nurse"
       "law law";
     grid-gap: 10px;
+  }
+
+  .messages {
+    font-size: 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #name2,
+  #textarea-for-comment,
+  #comment {
+    width: 97%;
   }
 
   .form {
@@ -378,6 +436,12 @@ button {
       "psych teach it"
       "nurse law .";
     grid-gap: 10px;
+  }
+
+  .messages {
+    font-size: 2px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .form {
@@ -462,6 +526,12 @@ button {
     grid-gap: 10px;
   }
 
+  .messages {
+    font-size: 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .form {
     display: grid;
     grid-template-areas:
@@ -470,7 +540,9 @@ button {
       ". checkbox"
       "message message"
       "submit submit";
-    overflow: scroll;
+    overflow: scroll
+
+;
   }
 
   input[type="number"],
@@ -504,3 +576,4 @@ button {
     height: 60px;
   }
 }
+```
